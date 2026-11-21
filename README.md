@@ -1,25 +1,25 @@
+# Flat Strata
 
-Installation information
-=======
+Мод для Minecraft 1.21.1 и NeoForge 21.1.267. Добавляет тип мира **«Плоские слои»** с фиксированной высотой поверхности, биомами, пещерами, рудами, жидкостями и структурами.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+## Генерация
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+- поверхность суши: `Y=63`;
+- прибрежное дно: `Y=55`;
+- океаническое дно: `Y=54`;
+- верхний блок воды: `Y=62` (уровень моря генератора: `63`);
+- пещеры: ниже `Y=50`;
+- глубинный сланец: `Y=0` и ниже;
+- коренная порода: `Y=-64`.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+Подслой и материал поверхности определяются биомом. Нижний мир и Энд используют обычную генерацию. Пресет построен на стандартном `minecraft:noise`, поэтому особенности других модов проходят обычные этапы worldgen.
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+## Сборка
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+```bash
+./gradlew build
+```
+
+Готовый файл: `build/libs/flatstrata-1.0.0.jar`.
+
+Настройки находятся в `src/main/resources/data/flatstrata/worldgen/noise_settings/flat_strata.json` и применяются при создании нового мира.
