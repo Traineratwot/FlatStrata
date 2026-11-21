@@ -1,4 +1,4 @@
-# Публикация Flat Strata 1.0.0
+# Публикация Flat Strata 1.0.1
 
 Все файлы для ручной публикации на Modrinth и CurseForge подготовлены. Автоматическая публикация и токены API не настраивались.
 
@@ -16,14 +16,14 @@ GitHub-репозиторий `Traineratwot/FlatStrata` сейчас **прив�
 | Поле | Значение |
 |---|---|
 | Название | `Flat Strata` |
-| Версия | `1.0.0` |
+| Версия | `1.0.1` |
 | Канал | `Release` |
 | Minecraft | `1.21.1` |
 | Загрузчик | `NeoForge` |
 | Минимальный NeoForge | `21.1.267` |
 | Java | `21` |
 | Лицензия | `MIT` |
-| Основной файл | `build/libs/flatstrata-1.0.0.jar` |
+| Основной файл | `build/libs/flatstrata-1.0.1.jar` |
 | Иконка | `src/main/resources/logo.png` |
 | Changelog | `CHANGELOG.md` |
 | Исходный код | `https://github.com/Traineratwot/FlatStrata` |
@@ -38,9 +38,7 @@ A flat overworld with fixed layers, all biomes, caves, ores, fluids and structur
 Changelog версии:
 
 ```text
-Initial release of Flat Strata for Minecraft 1.21.1 and NeoForge.
-
-Adds a flat overworld preset with fixed terrain layers, biomes, caves, ores, fluids, vegetation, and structures. Preserves normal Nether and End generation and uses standard worldgen stages for modpack compatibility.
+Fixed dry river biomes. Rivers now contain water at Y=59–62 above gravel beds at Y=58. Frozen rivers have ice at Y=62 with water below it. Existing land, desert, ocean, and underground layers are preserved.
 ```
 
 ## Modrinth
@@ -79,12 +77,12 @@ Adds a flat overworld preset with fixed terrain layers, biomes, caves, ores, flu
 
 | Поле | Значение |
 |---|---|
-| Version number | `1.0.0` |
-| Version title | `Flat Strata 1.0.0` |
+| Version number | `1.0.1` |
+| Version title | `Flat Strata 1.0.1` |
 | Release channel | `Release` |
 | Game version | `1.21.1` |
 | Loader | `NeoForge` |
-| File | `build/libs/flatstrata-1.0.0.jar` |
+| File | `build/libs/flatstrata-1.0.1.jar` |
 | Featured file | Включить |
 | Changelog | Текст выше |
 
@@ -108,7 +106,7 @@ Adds a flat overworld preset with fixed terrain layers, biomes, caves, ores, flu
 
 | Поле | Значение |
 |---|---|
-| File | `build/libs/flatstrata-1.0.0.jar` |
+| File | `build/libs/flatstrata-1.0.1.jar` |
 | Release type | `Release` |
 | Minecraft version | `1.21.1` |
 | Mod loader | `NeoForge` |
@@ -119,7 +117,7 @@ Adds a flat overworld preset with fixed terrain layers, biomes, caves, ores, flu
 ## Проверка перед отправкой
 
 - [ ] `./gradlew clean build` завершается успешно.
-- [ ] Загружается именно `flatstrata-1.0.0.jar`, без суффиксов `sources` или `dev`.
+- [ ] Загружается именно `flatstrata-1.0.1.jar`, без суффиксов `sources` или `dev`.
 - [ ] JAR содержит `logo.png`, `META-INF/neoforge.mods.toml` и `META-INF/accesstransformer.cfg`.
 - [ ] Репозиторий публичный либо URL изображений заменены на публичные.
 - [ ] На Modrinth добавлены все три изображения галереи с подписями.
