@@ -1,11 +1,15 @@
 modLoader="javafml"
 loaderVersion="${loader_version_range}"
 license="${mod_license}"
+issueTrackerURL="https://github.com/Traineratwot/FlatStrata/issues"
 
 [[mods]]
 modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
+displayURL="https://github.com/Traineratwot/FlatStrata"
+logoFile="logo.png"
+authors="Traineratwot"
 description='''
 Adds a flat overworld preset with fixed block layers, vanilla caves, ores, fluids, biomes, and structures.
 '''

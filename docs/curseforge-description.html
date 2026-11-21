@@ -1,0 +1,55 @@
+<h2>Flat Strata</h2>
+<p><strong>A flat world that still feels like Minecraft.</strong></p>
+<p>Flat Strata adds a new overworld preset with fixed terrain layers while preserving biomes, caves, ores, fluids, vegetation, and structures. It is designed for Minecraft 1.21.1 modpacks running NeoForge.</p>
+<img src="https://raw.githubusercontent.com/Traineratwot/FlatStrata/main/docs/images/biomes.png" alt="Multiple biomes at one surface height" width="100%">
+<h3>Features</h3>
+<ul>
+  <li>Flat land at <code>Y=63</code> with biome-appropriate surface blocks.</li>
+  <li>Three-block dirt or sand sublayers and fixed desert sandstone layers.</li>
+  <li>Coastal and deep ocean floors at fixed heights, with water up to <code>Y=62</code>.</li>
+  <li>Vanilla-style caves below <code>Y=50</code>, protected from breaking through the flat surface.</li>
+  <li>Ores, ore veins, underground water, and lava.</li>
+  <li>Villages, mineshafts, strongholds, and other structures.</li>
+  <li>Biome-specific materials for badlands, snowy biomes, and other special surfaces.</li>
+  <li>Normal Nether and End generation.</li>
+</ul>
+<h3>Designed for modpacks</h3>
+<p>Flat Strata uses the standard <code>minecraft:noise</code> chunk generator and <code>multi_noise</code> biome selection instead of replacing the entire worldgen pipeline. Modded worldgen features can use standard generation stages and NeoForge biome modifiers.</p>
+<p>Compatibility with a specific mod still depends on how that mod implements its terrain, biomes, or structures.</p>
+<h3>Fixed layers</h3>
+<table>
+  <tr><th>Layer</th><th>Height</th></tr>
+  <tr><td>Land surface</td><td><code>Y=63</code></td></tr>
+  <tr><td>Dirt or sand sublayer</td><td><code>Y=60–62</code></td></tr>
+  <tr><td>Desert sandstone</td><td><code>Y=57–59</code></td></tr>
+  <tr><td>Coastal floor</td><td><code>Y=55</code></td></tr>
+  <tr><td>Deep ocean floor</td><td><code>Y=54</code></td></tr>
+  <tr><td>Highest water block</td><td><code>Y=62</code></td></tr>
+  <tr><td>Caves</td><td>Below <code>Y=50</code></td></tr>
+  <tr><td>Deepslate</td><td><code>Y=0</code> and below</td></tr>
+  <tr><td>Bedrock</td><td><code>Y=-64</code></td></tr>
+</table>
+<h3>Requirements</h3>
+<ul>
+  <li>Minecraft <strong>1.21.1</strong></li>
+  <li>NeoForge <strong>21.1.267 or newer</strong></li>
+  <li>Java <strong>21</strong></li>
+</ul>
+<p>Install the JAR on both the client and server when playing on a dedicated server.</p>
+<h3>Usage</h3>
+<ol>
+  <li>Start creating a new world.</li>
+  <li>Open <strong>More World Options</strong>.</li>
+  <li>Select <strong>Flat Strata</strong> as the world type.</li>
+</ol>
+<p>Existing worlds are not changed. The preset applies only when creating a new world.</p>
+<h3>More screenshots</h3>
+<img src="https://raw.githubusercontent.com/Traineratwot/FlatStrata/main/docs/images/surface.png" alt="Flat surface with vegetation and wildlife" width="100%">
+<img src="https://raw.githubusercontent.com/Traineratwot/FlatStrata/main/docs/images/caves.png" alt="Caves, ores, fluids, and underground structures" width="100%">
+<h3>Source and support</h3>
+<ul>
+  <li><a href="https://github.com/Traineratwot/FlatStrata">Source code</a></li>
+  <li><a href="https://github.com/Traineratwot/FlatStrata/issues">Issue tracker</a></li>
+  <li><a href="https://github.com/Traineratwot/FlatStrata/blob/main/README.ru.md">Russian README</a></li>
+</ul>
+<p>Licensed under MIT.</p>
