@@ -14,7 +14,8 @@ Flat Strata adds a new overworld preset with fixed terrain layers while preservi
 
 - Flat land at a fixed height with biome-appropriate surface blocks.
 - Fixed ocean floors and sea level.
-- Water-filled rivers with gravel beds and frozen rivers with an ice surface.
+- Water-filled rivers with gravel beds, clay deposits on the bed and lower banks, and frozen rivers with an ice surface.
+- Smoothed surface biome borders without blocky 4×4 surface transitions.
 - Vanilla-style caves below a protected surface crust.
 - Ores, ore veins, underground water, and lava.
 - Villages, mineshafts, strongholds, and other structures.
@@ -72,7 +73,7 @@ Badlands, snowy biomes, and other special surface types retain their biome-speci
 ./gradlew build
 ```
 
-The release JAR is written to `build/libs/flatstrata-1.1.0.jar`.
+The release JAR is written to `build/libs/flatstrata-1.2.0.jar`.
 
 ## Links
 

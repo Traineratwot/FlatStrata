@@ -11,7 +11,8 @@ Flat Strata adds a new overworld preset with fixed terrain layers while preservi
 - Flat land at `Y=63` with biome-appropriate surface blocks.
 - Three-block dirt or sand sublayers and fixed desert sandstone layers.
 - Coastal and deep ocean floors at fixed heights, with water up to `Y=62`.
-- Rivers filled with water above gravel beds and frozen rivers with an ice surface.
+- Rivers filled with water above gravel beds, clay deposits on the bed and lower banks, and frozen rivers with an ice surface.
+- Smoothed surface biome borders without blocky 4×4 transitions.
 - Vanilla-style caves below `Y=50`, protected from breaking through the flat surface.
 - Ores, ore veins, underground water, and lava.
 - Villages, mineshafts, strongholds, and other structures.

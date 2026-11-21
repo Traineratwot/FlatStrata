@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.0 — 2026-11-22
+
+- Added noise-based clay deposits to riverbeds at `Y=58`.
+- Added clay deposits to the lower riverbanks at `Y=59–60`.
+- Preserved gravel patches, open water, and frozen river ice.
+- Smoothed surface biome transitions by evaluating vanilla fuzzy biome selection at a fixed surface height instead of using blocky quart-cell boundaries.
+- Kept all layers beneath the surface consistent with the selected surface biome.
+
 ## 1.1.0 — 2026-11-22
 
 - Added strict validation for vanilla and modded structure starts in the Flat Strata preset.
