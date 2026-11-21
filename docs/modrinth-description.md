@@ -14,6 +14,7 @@ Flat Strata adds a new overworld preset with fixed terrain layers while preservi
 - Rivers filled with water above gravel beds, clay deposits on the bed and lower banks, and frozen rivers with an ice surface.
 - Smoothed surface biome borders without blocky 4×4 transitions.
 - Vanilla-style caves below `Y=50`, protected from breaking through the flat surface.
+- Dripstone and lush caves kept underground, with deep dark reserved for the lowest levels.
 - Ores, ore veins, underground water, and lava.
 - Villages, mineshafts, strongholds, and other structures.
 - Strict structure validation: surface structures stay within one biome and above solid support, while underground structures cannot cross the surface.

@@ -1,4 +1,4 @@
-# Публикация Flat Strata 1.2.0
+# Публикация Flat Strata 1.2.1
 
 Все файлы для ручной публикации на Modrinth и CurseForge подготовлены. Автоматическая публикация и токены API не настраивались.
 
@@ -16,14 +16,14 @@ GitHub-репозиторий `Traineratwot/FlatStrata` сейчас **прив�
 | Поле | Значение |
 |---|---|
 | Название | `Flat Strata` |
-| Версия | `1.2.0` |
+| Версия | `1.2.1` |
 | Канал | `Release` |
 | Minecraft | `1.21.1` |
 | Загрузчик | `NeoForge` |
 | Минимальный NeoForge | `21.1.267` |
 | Java | `21` |
 | Лицензия | `MIT` |
-| Основной файл | `build/libs/flatstrata-1.2.0.jar` |
+| Основной файл | `build/libs/flatstrata-1.2.1.jar` |
 | Иконка | `src/main/resources/logo.png` |
 | Changelog | `CHANGELOG.md` |
 | Исходный код | `https://github.com/Traineratwot/FlatStrata` |
@@ -38,7 +38,7 @@ A flat overworld with fixed layers, all biomes, caves, ores, fluids and structur
 Changelog версии:
 
 ```text
-Added clay deposits to riverbeds and lower riverbanks while preserving gravel patches, open water, and frozen river ice. Smoothed surface biome borders using vanilla fuzzy biome selection at a fixed surface height, removing blocky 4×4 surface transitions and keeping subsurface materials consistent.
+Fixed dripstone and lush cave biomes appearing on the flat surface. Added a Flat Strata biome depth curve that keeps surface biomes above ground, dripstone and lush caves underground, and deep dark below Y=-48. River generation and strict structure validation are preserved.
 ```
 
 ## Modrinth
@@ -77,12 +77,12 @@ Added clay deposits to riverbeds and lower riverbanks while preserving gravel pa
 
 | Поле | Значение |
 |---|---|
-| Version number | `1.2.0` |
-| Version title | `Flat Strata 1.2.0` |
+| Version number | `1.2.1` |
+| Version title | `Flat Strata 1.2.1` |
 | Release channel | `Release` |
 | Game version | `1.21.1` |
 | Loader | `NeoForge` |
-| File | `build/libs/flatstrata-1.2.0.jar` |
+| File | `build/libs/flatstrata-1.2.1.jar` |
 | Featured file | Включить |
 | Changelog | Текст выше |
 
@@ -106,7 +106,7 @@ Added clay deposits to riverbeds and lower riverbanks while preserving gravel pa
 
 | Поле | Значение |
 |---|---|
-| File | `build/libs/flatstrata-1.2.0.jar` |
+| File | `build/libs/flatstrata-1.2.1.jar` |
 | Release type | `Release` |
 | Minecraft version | `1.21.1` |
 | Mod loader | `NeoForge` |
@@ -117,7 +117,7 @@ Added clay deposits to riverbeds and lower riverbanks while preserving gravel pa
 ## Проверка перед отправкой
 
 - [ ] `./gradlew clean build` завершается успешно.
-- [ ] Загружается именно `flatstrata-1.2.0.jar`, без суффиксов `sources` или `dev`.
+- [ ] Загружается именно `flatstrata-1.2.1.jar`, без суффиксов `sources` или `dev`.
 - [ ] JAR содержит `logo.png`, `META-INF/neoforge.mods.toml` и `META-INF/accesstransformer.cfg`.
 - [ ] Репозиторий публичный либо URL изображений заменены на публичные.
 - [ ] На Modrinth добавлены все три изображения галереи с подписями.

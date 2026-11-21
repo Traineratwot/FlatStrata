@@ -25,7 +25,13 @@
       "y_scale": 0.5
     },
     "continents": "minecraft:overworld/continents",
-    "depth": "minecraft:overworld/depth",
+    "depth": {
+      "type": "minecraft:y_clamped_gradient",
+      "from_y": -48,
+      "from_value": 1.1,
+      "to_y": 56,
+      "to_value": 0.0
+    },
     "erosion": "minecraft:overworld/erosion",
     "final_density": {
       "type": "minecraft:max",

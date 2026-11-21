@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.1 — 2026-11-22
+
+- Fixed dripstone and lush cave biomes appearing on the flat surface.
+- Replaced the vanilla terrain-dependent biome depth with a depth curve designed for Flat Strata.
+- Kept surface biomes at the surface, dripstone and lush caves underground, and deep dark below `Y=-48`.
+- Preserved biome lookup, river generation, and strict structure validation.
+
 ## 1.2.0 — 2026-11-22
 
 - Added noise-based clay deposits to riverbeds at `Y=58`.
