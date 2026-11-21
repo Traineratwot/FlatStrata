@@ -11,12 +11,13 @@
   <li>Vanilla-style caves below <code>Y=50</code>, protected from breaking through the flat surface.</li>
   <li>Ores, ore veins, underground water, and lava.</li>
   <li>Villages, mineshafts, strongholds, and other structures.</li>
+  <li>Strict structure validation: surface structures stay within one biome and above solid support, while underground structures cannot cross the surface.</li>
   <li>Biome-specific materials for badlands, snowy biomes, and other special surfaces.</li>
   <li>Normal Nether and End generation.</li>
 </ul>
 <h3>Designed for modpacks</h3>
 <p>Flat Strata uses the standard <code>minecraft:noise</code> chunk generator and <code>multi_noise</code> biome selection instead of replacing the entire worldgen pipeline. Modded worldgen features can use standard generation stages and NeoForge biome modifiers.</p>
-<p>Compatibility with a specific mod still depends on how that mod implements its terrain, biomes, or structures.</p>
+<p>Compatibility with a specific mod still depends on how that mod implements its terrain, biomes, or structures. Strict filtering reduces the number of accepted structures near biome borders.</p>
 <h3>Fixed layers</h3>
 <table>
   <tr><th>Layer</th><th>Height</th></tr>

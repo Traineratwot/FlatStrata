@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.0 — 2026-11-22
+
+- Added strict validation for vanilla and modded structure starts in the Flat Strata preset.
+- Surface structures must remain within one surface biome across their complete footprint.
+- Surface structures are rejected when their support zone contains noise-generated cavities.
+- Underground structures are rejected when any part reaches or crosses the surface.
+- Updated structure checks used by `/locate` to avoid reporting rejected structures.
+- Other world presets and dimensions are not affected.
+
+Strict validation reduces the number of accepted structures, especially large structures and structures near biome borders.
+
 ## 1.0.1 — 2026-11-21
 
 - Fixed dry river biomes.

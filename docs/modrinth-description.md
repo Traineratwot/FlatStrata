@@ -15,6 +15,7 @@ Flat Strata adds a new overworld preset with fixed terrain layers while preservi
 - Vanilla-style caves below `Y=50`, protected from breaking through the flat surface.
 - Ores, ore veins, underground water, and lava.
 - Villages, mineshafts, strongholds, and other structures.
+- Strict structure validation: surface structures stay within one biome and above solid support, while underground structures cannot cross the surface.
 - Biome-specific materials for badlands, snowy biomes, and other special surfaces.
 - Normal Nether and End generation.
 
@@ -22,7 +23,7 @@ Flat Strata adds a new overworld preset with fixed terrain layers while preservi
 
 Flat Strata uses the standard `minecraft:noise` chunk generator and `multi_noise` biome selection instead of replacing the entire worldgen pipeline. Modded worldgen features can use standard generation stages and NeoForge biome modifiers.
 
-Compatibility with a specific mod still depends on how that mod implements its terrain, biomes, or structures.
+Compatibility with a specific mod still depends on how that mod implements its terrain, biomes, or structures. Strict filtering reduces the number of accepted structures near biome borders.
 
 ## Fixed layers
 

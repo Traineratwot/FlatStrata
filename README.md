@@ -18,11 +18,12 @@ Flat Strata adds a new overworld preset with fixed terrain layers while preservi
 - Vanilla-style caves below a protected surface crust.
 - Ores, ore veins, underground water, and lava.
 - Villages, mineshafts, strongholds, and other structures.
+- Strict structure validation: surface structures cannot cross biome boundaries or unsupported cavities, and underground structures cannot break through the surface.
 - Standard `minecraft:noise` terrain generation and `multi_noise` biome selection.
 - Modded worldgen features can use the standard generation stages and NeoForge biome modifiers.
 - The Nether and the End keep their normal generation.
 
-Existing worlds are not changed. The preset applies only when creating a new world.
+Existing worlds are not changed. The preset applies only when creating a new world. Strict structure filtering can reduce the number of structures near biome borders.
 
 ## Fixed layers
 
@@ -71,7 +72,7 @@ Badlands, snowy biomes, and other special surface types retain their biome-speci
 ./gradlew build
 ```
 
-The release JAR is written to `build/libs/flatstrata-1.0.1.jar`.
+The release JAR is written to `build/libs/flatstrata-1.1.0.jar`.
 
 ## Links
 

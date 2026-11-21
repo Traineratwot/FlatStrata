@@ -1,4 +1,4 @@
-# Публикация Flat Strata 1.0.1
+# Публикация Flat Strata 1.1.0
 
 Все файлы для ручной публикации на Modrinth и CurseForge подготовлены. Автоматическая публикация и токены API не настраивались.
 
@@ -16,14 +16,14 @@ GitHub-репозиторий `Traineratwot/FlatStrata` сейчас **прив�
 | Поле | Значение |
 |---|---|
 | Название | `Flat Strata` |
-| Версия | `1.0.1` |
+| Версия | `1.1.0` |
 | Канал | `Release` |
 | Minecraft | `1.21.1` |
 | Загрузчик | `NeoForge` |
 | Минимальный NeoForge | `21.1.267` |
 | Java | `21` |
 | Лицензия | `MIT` |
-| Основной файл | `build/libs/flatstrata-1.0.1.jar` |
+| Основной файл | `build/libs/flatstrata-1.1.0.jar` |
 | Иконка | `src/main/resources/logo.png` |
 | Changelog | `CHANGELOG.md` |
 | Исходный код | `https://github.com/Traineratwot/FlatStrata` |
@@ -38,7 +38,7 @@ A flat overworld with fixed layers, all biomes, caves, ores, fluids and structur
 Changelog версии:
 
 ```text
-Fixed dry river biomes. Rivers now contain water at Y=59–62 above gravel beds at Y=58. Frozen rivers have ice at Y=62 with water below it. Existing land, desert, ocean, and underground layers are preserved.
+Added strict structure validation for the Flat Strata preset. Surface structures must stay within one biome and above solid support. Underground structures cannot reach or cross the surface. Validation also applies to modded structure starts and /locate results. Strict filtering reduces the number of accepted structures near biome borders.
 ```
 
 ## Modrinth
@@ -77,12 +77,12 @@ Fixed dry river biomes. Rivers now contain water at Y=59–62 above gravel beds 
 
 | Поле | Значение |
 |---|---|
-| Version number | `1.0.1` |
-| Version title | `Flat Strata 1.0.1` |
+| Version number | `1.1.0` |
+| Version title | `Flat Strata 1.1.0` |
 | Release channel | `Release` |
 | Game version | `1.21.1` |
 | Loader | `NeoForge` |
-| File | `build/libs/flatstrata-1.0.1.jar` |
+| File | `build/libs/flatstrata-1.1.0.jar` |
 | Featured file | Включить |
 | Changelog | Текст выше |
 
@@ -106,7 +106,7 @@ Fixed dry river biomes. Rivers now contain water at Y=59–62 above gravel beds 
 
 | Поле | Значение |
 |---|---|
-| File | `build/libs/flatstrata-1.0.1.jar` |
+| File | `build/libs/flatstrata-1.1.0.jar` |
 | Release type | `Release` |
 | Minecraft version | `1.21.1` |
 | Mod loader | `NeoForge` |
@@ -117,7 +117,7 @@ Fixed dry river biomes. Rivers now contain water at Y=59–62 above gravel beds 
 ## Проверка перед отправкой
 
 - [ ] `./gradlew clean build` завершается успешно.
-- [ ] Загружается именно `flatstrata-1.0.1.jar`, без суффиксов `sources` или `dev`.
+- [ ] Загружается именно `flatstrata-1.1.0.jar`, без суффиксов `sources` или `dev`.
 - [ ] JAR содержит `logo.png`, `META-INF/neoforge.mods.toml` и `META-INF/accesstransformer.cfg`.
 - [ ] Репозиторий публичный либо URL изображений заменены на публичные.
 - [ ] На Modrinth добавлены все три изображения галереи с подписями.

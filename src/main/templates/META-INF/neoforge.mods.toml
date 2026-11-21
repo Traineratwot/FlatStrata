@@ -14,6 +14,9 @@ description='''
 Adds a flat overworld preset with fixed block layers, vanilla caves, ores, fluids, biomes, and structures.
 '''
 
+[[mixins]]
+config="flatstrata.mixins.json"
+
 [[dependencies.${mod_id}]]
 modId="neoforge"
 type="required"

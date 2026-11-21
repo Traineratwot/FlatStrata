@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.flatstrata.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "StructureCheckMixin",
+    "StructureMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
