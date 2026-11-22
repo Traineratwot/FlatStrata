@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.0 — 2026-11-22
+
+- Added separate Forge 1.20.1 and Fabric 1.20.1 builds alongside NeoForge 1.21.1.
+- Preserved fixed layers, river clay, smoothed surface biomes, underground cave biomes, and strict structure validation on every loader.
+- Added independent CI builds with Java 17 for the 1.20.1 modules and Java 21 for NeoForge 1.21.1.
+- Added loader-specific metadata, access configuration, registration, and release filenames.
+
 ## 1.2.1 — 2026-11-22
 
 - Fixed dripstone and lush cave biomes appearing on the flat surface.

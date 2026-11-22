@@ -1,35 +1,33 @@
-# Публикация Flat Strata 1.2.1
+# Публикация Flat Strata 1.3.0
 
-Все файлы для ручной публикации на Modrinth и CurseForge подготовлены. Автоматическая публикация и токены API не настраивались.
+Подготовлены отдельные файлы для NeoForge, Forge и Fabric. Автоматическая публикация и токены API не настраивались.
 
-## Обязательно перед публикацией
+## Перед публикацией
 
-GitHub-репозиторий `Traineratwot/FlatStrata` сейчас **приватный**. Изображения по ссылкам `raw.githubusercontent.com` не будут доступны на страницах модов, пока репозиторий не станет публичным.
-
-Нужно выполнить одно из двух действий:
-
-- сделать репозиторий публичным перед созданием страниц;
-- или загрузить изображения на другой публичный хостинг и заменить URL в `docs/modrinth-description.md` и `docs/curseforge-description.html`.
+GitHub-репозиторий `Traineratwot/FlatStrata` сейчас **приватный**. Для отображения изображений по ссылкам `raw.githubusercontent.com` его нужно сделать публичным либо перенести изображения на публичный хостинг и обновить URL в описаниях.
 
 ## Общие данные
 
 | Поле | Значение |
 |---|---|
 | Название | `Flat Strata` |
-| Версия | `1.2.1` |
+| Версия | `1.3.0` |
 | Канал | `Release` |
-| Minecraft | `1.21.1` |
-| Загрузчик | `NeoForge` |
-| Минимальный NeoForge | `21.1.267` |
-| Java | `21` |
 | Лицензия | `MIT` |
-| Основной файл | `build/libs/flatstrata-1.2.1.jar` |
 | Иконка | `src/main/resources/logo.png` |
 | Changelog | `CHANGELOG.md` |
 | Исходный код | `https://github.com/Traineratwot/FlatStrata` |
 | Ошибки | `https://github.com/Traineratwot/FlatStrata/issues` |
 
-Краткое описание для обеих площадок:
+| Загрузчик | Minecraft | Java | Файл |
+|---|---|---:|---|
+| NeoForge 21.1.267+ | 1.21.1 | 21 | `build/libs/flatstrata-1.3.0.jar` |
+| Forge 47.4.20+ | 1.20.1 | 17 | `forge-1.20.1/build/libs/flatstrata-1.20.1-forge-1.3.0.jar` |
+| Fabric Loader 0.16.10+ | 1.20.1 | 17 | `fabric-1.20.1/build/libs/flatstrata-1.20.1-fabric-1.3.0.jar` |
+
+Fabric-версия требует Fabric API `0.92.12+1.20.1` или совместимую более новую версию. Файлы разных загрузчиков несовместимы между собой.
+
+Краткое описание:
 
 ```text
 A flat overworld with fixed layers, all biomes, caves, ores, fluids and structures, designed for modpack compatibility.
@@ -38,7 +36,7 @@ A flat overworld with fixed layers, all biomes, caves, ores, fluids and structur
 Changelog версии:
 
 ```text
-Fixed dripstone and lush cave biomes appearing on the flat surface. Added a Flat Strata biome depth curve that keeps surface biomes above ground, dripstone and lush caves underground, and deep dark below Y=-48. River generation and strict structure validation are preserved.
+Added separate Forge 1.20.1 and Fabric 1.20.1 builds alongside NeoForge 1.21.1. Fixed layers, river clay, smoothed biome borders, underground cave biomes, and strict structure validation are available on all three loaders. Added independent CI builds and loader-specific release files.
 ```
 
 ## Modrinth
@@ -50,7 +48,7 @@ Fixed dripstone and lush cave biomes appearing on the flat surface. Added a Flat
 | Project type | `Mod` |
 | Name | `Flat Strata` |
 | Summary | Краткое описание выше |
-| Description | Содержимое `docs/modrinth-description.md` |
+| Description | `docs/modrinth-description.md` |
 | Categories | `worldgen`; дополнительно `utility` |
 | License | `MIT` |
 | Source code | `https://github.com/Traineratwot/FlatStrata` |
@@ -59,11 +57,7 @@ Fixed dripstone and lush cave biomes appearing on the flat surface. Added a Flat
 | Server side | `Required` |
 | Icon | `src/main/resources/logo.png` |
 
-`Required` на обеих сторонах выбран потому, что пресет нужен при создании одиночного и серверного мира.
-
 ### Галерея
-
-Загрузить файлы напрямую из репозитория:
 
 | Файл | Подпись |
 |---|---|
@@ -77,14 +71,15 @@ Fixed dripstone and lush cave biomes appearing on the flat surface. Added a Flat
 
 | Поле | Значение |
 |---|---|
-| Version number | `1.2.1` |
-| Version title | `Flat Strata 1.2.1` |
+| Version number | `1.3.0` |
+| Version title | `Flat Strata 1.3.0` |
 | Release channel | `Release` |
-| Game version | `1.21.1` |
-| Loader | `NeoForge` |
-| File | `build/libs/flatstrata-1.2.1.jar` |
-| Featured file | Включить |
+| Game versions | `1.20.1`, `1.21.1` |
+| Loaders | `Forge`, `Fabric`, `NeoForge` |
+| Files | Все три JAR из таблицы выше |
 | Changelog | Текст выше |
+
+На Modrinth все три файла можно приложить к одной версии с общим набором загрузчиков и версий Minecraft. Основным файлом рекомендуется выбрать NeoForge 1.21.1.
 
 ## CurseForge
 
@@ -95,32 +90,31 @@ Fixed dripstone and lush cave biomes appearing on the flat surface. Added a Flat
 | Project type | `Mod` |
 | Name | `Flat Strata` |
 | Summary | Краткое описание выше |
-| Description | Содержимое `docs/curseforge-description.html` |
+| Description | `docs/curseforge-description.html` |
 | Main category | `World Gen` |
 | License | `MIT` |
 | Source | `https://github.com/Traineratwot/FlatStrata` |
 | Issues | `https://github.com/Traineratwot/FlatStrata/issues` |
 | Logo | `src/main/resources/logo.png` |
 
-### Загрузка файла
+Загрузить три отдельных файла `Release`:
 
-| Поле | Значение |
-|---|---|
-| File | `build/libs/flatstrata-1.2.1.jar` |
-| Release type | `Release` |
-| Minecraft version | `1.21.1` |
-| Mod loader | `NeoForge` |
-| Changelog | Текст выше |
+1. NeoForge JAR — Minecraft `1.21.1`, загрузчик `NeoForge`.
+2. Forge JAR — Minecraft `1.20.1`, загрузчик `Forge`.
+3. Fabric JAR — Minecraft `1.20.1`, загрузчик `Fabric`.
 
-Дополнительные зависимости на CurseForge не требуются. Требования NeoForge и Java уже указаны в описании и метаданных JAR.
+Для Fabric-файла добавить зависимость от Fabric API, если интерфейс CurseForge предлагает задать relations. Для остальных файлов дополнительных модовых зависимостей нет.
 
 ## Проверка перед отправкой
 
-- [ ] `./gradlew clean build` завершается успешно.
-- [ ] Загружается именно `flatstrata-1.2.1.jar`, без суффиксов `sources` или `dev`.
-- [ ] JAR содержит `logo.png`, `META-INF/neoforge.mods.toml` и `META-INF/accesstransformer.cfg`.
+- [ ] `./gradlew clean build` успешно выполнен для NeoForge.
+- [ ] `./gradlew clean build` успешно выполнен в `forge-1.20.1`.
+- [ ] `./gradlew clean build` успешно выполнен в `fabric-1.20.1`.
+- [ ] Загружаются основные JAR без суффиксов `sources` или `dev`.
+- [ ] NeoForge JAR содержит `META-INF/neoforge.mods.toml`.
+- [ ] Forge JAR содержит `META-INF/mods.toml`.
+- [ ] Fabric JAR содержит `fabric.mod.json`, Access Widener и зависимость Fabric API.
+- [ ] Все JAR содержат иконку, лицензию, mixin-конфигурацию и worldgen-ресурсы.
 - [ ] Репозиторий публичный либо URL изображений заменены на публичные.
-- [ ] На Modrinth добавлены все три изображения галереи с подписями.
-- [ ] В предпросмотре описаний отображаются таблицы и скриншоты.
-- [ ] На страницах указаны Minecraft 1.21.1 и NeoForge, без Fabric и других версий Minecraft.
-- [ ] Новый мир создаётся с пресетом **Flat Strata / Плоские слои** на чистой установке и в целевой сборке.
+- [ ] На страницах выбраны все три загрузчика и обе поддерживаемые версии Minecraft.
+- [ ] Каждый вариант проверен на headless server с созданием мира **Flat Strata / Плоские слои**.

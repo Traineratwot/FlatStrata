@@ -4,7 +4,7 @@
 
 **A flat world that still feels like Minecraft.**
 
-Flat Strata adds a new overworld preset with fixed terrain layers while preserving biomes, caves, ores, fluids, vegetation, and structures. It is designed for Minecraft 1.21.1 modpacks running NeoForge.
+Flat Strata adds a new overworld preset with fixed terrain layers while preserving biomes, caves, ores, fluids, vegetation, and structures. Separate builds support NeoForge 1.21.1, Forge 1.20.1, and Fabric 1.20.1.
 
 [Русское описание](README.ru.md)
 
@@ -45,11 +45,15 @@ Existing worlds are not changed. The preset applies only when creating a new wor
 
 Badlands, snowy biomes, and other special surface types retain their biome-specific materials.
 
-## Requirements
+## Supported versions
 
-- Minecraft **1.21.1**
-- NeoForge **21.1.267 or newer**
-- Java **21**
+| Loader | Minecraft | Java | Release JAR |
+|---|---|---:|---|
+| NeoForge 21.1.267+ | 1.21.1 | 21 | `flatstrata-1.3.0.jar` |
+| Forge 47.4.20+ | 1.20.1 | 17 | `flatstrata-1.20.1-forge-1.3.0.jar` |
+| Fabric Loader 0.16.10+ | 1.20.1 | 17 | `flatstrata-1.20.1-fabric-1.3.0.jar` |
+
+Use the JAR matching both your Minecraft version and mod loader. Loader files are built from the same repository but are not interchangeable.
 
 ## Usage
 
@@ -72,9 +76,11 @@ Badlands, snowy biomes, and other special surface types retain their biome-speci
 
 ```bash
 ./gradlew build
+cd forge-1.20.1 && ./gradlew build
+cd ../fabric-1.20.1 && ./gradlew build
 ```
 
-The release JAR is written to `build/libs/flatstrata-1.2.1.jar`.
+Release files are written to each module's `build/libs` directory. GitHub Actions builds all three loaders independently.
 
 ## Links
 

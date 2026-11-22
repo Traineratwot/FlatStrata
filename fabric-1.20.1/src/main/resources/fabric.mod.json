@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "flatstrata",
+  "version": "${version}",
+  "name": "Flat Strata",
+  "description": "A flat overworld preset with fixed layers, rivers, caves, ores, biomes, fluids, structures, and strict structure validation.",
+  "authors": ["Traineratwot"],
+  "contact": {
+    "homepage": "https://github.com/Traineratwot/FlatStrata",
+    "sources": "https://github.com/Traineratwot/FlatStrata",
+    "issues": "https://github.com/Traineratwot/FlatStrata/issues"
+  },
+  "license": "MIT",
+  "icon": "logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.flatstrata.FlatStrataMod"]
+  },
+  "mixins": ["flatstrata.mixins.json"],
+  "accessWidener": "flatstrata.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}

@@ -2,7 +2,7 @@
 
 **A flat world that still feels like Minecraft.**
 
-Flat Strata adds a new overworld preset with fixed terrain layers while preserving biomes, caves, ores, fluids, vegetation, and structures. It is designed for Minecraft 1.21.1 modpacks running NeoForge.
+Flat Strata adds a new overworld preset with fixed terrain layers while preserving biomes, caves, ores, fluids, vegetation, and structures. Separate builds support NeoForge 1.21.1, Forge 1.20.1, and Fabric 1.20.1.
 
 ![Multiple biomes at one surface height](https://raw.githubusercontent.com/Traineratwot/FlatStrata/main/docs/images/biomes.png)
 
@@ -43,13 +43,15 @@ Compatibility with a specific mod still depends on how that mod implements its t
 | Deepslate | `Y=0` and below |
 | Bedrock | `Y=-64` |
 
-## Requirements
+## Supported versions
 
-- Minecraft **1.21.1**
-- NeoForge **21.1.267 or newer**
-- Java **21**
+| Loader | Minecraft | Java |
+|---|---|---:|
+| NeoForge 21.1.267+ | 1.21.1 | 21 |
+| Forge 47.4.20+ | 1.20.1 | 17 |
+| Fabric Loader 0.16.10+ | 1.20.1 | 17 |
 
-Install the JAR on both the client and server when playing on a dedicated server.
+Fabric also requires Fabric API. Use the file matching your Minecraft version and loader. Install the JAR on both the client and server when playing on a dedicated server.
 
 ## Usage
 
