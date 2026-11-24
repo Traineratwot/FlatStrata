@@ -6,6 +6,9 @@
 
 Flat Strata adds a new overworld preset with fixed terrain layers while preserving biomes, caves, ores, fluids, vegetation, and structures. Separate builds support NeoForge 1.21.1, Forge 1.20.1, and Fabric 1.20.1.
 
+<img width="480" height="270" alt="5zb0ouv3uomz" src="https://github.com/user-attachments/assets/da5434d7-9d24-495b-b9de-da35b13e8cd4" />
+
+
 [Русское описание](README.ru.md)
 
 ![Multiple biomes at one surface height](docs/images/biomes.png)
